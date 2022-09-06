@@ -1,23 +1,42 @@
 ﻿try
 {
-Console.WriteLine ("Введите трёхзначное число");
+Console.WriteLine ("Введите цифру от 1 до 7");
 int a = Convert.ToInt32 (Console.ReadLine ());
-if (a > 999) 
+if (a > 7) 
 {
-Console.WriteLine ("Нужно ввести трёхзначное число!");
+Console.WriteLine ("Введите цифру от 1 до 7!");
 }
-else if (a < 100) 
+else if (a == 1 )
 {
-Console.WriteLine ("Нужно ввести трёхзначное число!");
+Console.WriteLine ("нет");
 }
-else 
+else if (a == 2 )
 {
-int a2 = ((a % 100) - (a % 10)) / 10;
-Console.WriteLine ("Вторая цифра " + a2);
-};
+Console.WriteLine ("нет");
+}
+else if (a == 3 )
+{
+Console.WriteLine ("нет");
+}
+else if (a == 4 )
+{
+Console.WriteLine ("нет");
+}
+else if (a == 5 )
+{
+Console.WriteLine ("нет");
+}
+else if (a == 6)
+{
+Console.WriteLine ("да");
+}
+else if (a == 7)
+{
+Console.WriteLine ("да");
+}
 }
 catch 
 {
-Console.WriteLine ("Нужно ввести трёхзначное число!");
+Console.WriteLine ("error");
 };
 
